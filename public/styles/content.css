@@ -1,0 +1,50 @@
+main > #content {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+main > #content h1 {
+  margin-bottom: 1rem;
+  font-size: 1.5rem;
+  font-weight: bold;
+  border-bottom: 1px solid var(--divider-color);
+  padding-bottom: 0.5rem;
+}
+
+main > #content img {
+  width: 100%;
+  margin-bottom: 0.75rem;
+}
+
+main > #content p:not(:last-child) {
+  margin-bottom: 0.75rem;
+}
+
+main > #content li {
+  list-style: square;
+  margin-left: 1rem;
+}
+
+main > #content ul > li:not(:last-child) {
+  margin-bottom: 0.5rem;
+}
+
+/* Mobile up */
+@media only screen and (min-width: 600px) {
+  main > #content img {
+    width: initial;
+  }
+
+  main > #content #overview img {
+    height: 11.75rem;
+    float: left;
+    margin-right: 0.75rem;
+  }
+
+  main > #content #origin img {
+    height: 10.5rem;
+    float: right;
+    margin-left: 0.75rem;
+  }
+}

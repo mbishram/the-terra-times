@@ -1,0 +1,9 @@
+footer {
+  border-top: 3px double var(--divider-color);
+  padding: 1rem;
+  text-align: center;
+}
+
+footer a {
+  color: var(--secondary-text-color);
+}
